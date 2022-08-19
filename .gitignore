@@ -102,3 +102,4 @@ dist/
 .env
 
 *manifest*.yml
+sonar-project.properties
