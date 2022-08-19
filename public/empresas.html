@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Empresasm| ETB</title>
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <script src="./js/chat-box.js"></script>
+</head>
+
+<body>
+    <div class="chatbot-pratech-login empresas">
+        <div class="chatbot-pratech-login-loader" id="loadingSpinner" style="display: none">
+            <div class="chatbot-pratech-loading"><img src="./images/avataraccess.png" /></div>
+        </div>
+        <div class="chatbot-pratech-login-header">
+            <img src="./images/logoetb2.png" class="chatbot-pratech-form-header-image" />
+        </div>
+        <div class="chatbot-pratech-login-form" id="formLoginAside">
+            <input type="text" onkeydown=pratech.parly.hideAlertsLogin() name="name" id="name"
+                placeholder="Nombre de usuario" class="chatbot-pratech-login-input">
+            <div class="chatbot-pratech-alertRed" id="alertNameMail" style="display: none">Formato de correo inválido.
+            </div>
+            <input type="password" onkeydown=pratech.parly.hideAlertsLogin() name="password" id="password"
+                placeholder="Contraseña" class="chatbot-pratech-login-input">
+            <div class="chatbot-pratech-alertRed" id="alertPass" style="display: none">La contraseña debe contener
+                mínimo 8 caracteres, una letra mayúscula y una minúscula.</div>
+            <div class="chatbot-pratech-alertRed" id="alertLoginIncompletos" style="display: none">Complete todos los
+                campos.</div>
+
+        </div>
+
+        <div class="chatbot-pratech-login-form">
+            <a href="javascript:;" onclick=pratech.parly._loginConfirmCompanies(event) class="chatbot-pratech-login-sendButton">
+                <span>Ingresar</span>
+            </a>
+            <a onclick=pratech.parly._loginCancel(event) href="javascript:;" class="chatbot-pratech-logn-cancelButton">
+               <span>Cancelar</span>
+            </a>
+        </div>
+        <div class="chatbot-pratech-aside-loader" id="loadingSpinner" style="display: none">
+
+</body>
+
+</html>
